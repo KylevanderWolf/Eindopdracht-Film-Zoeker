@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer type="text/javascript" src="movieData.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
+    <title>Movie Filter</title>
+</head>
+
+<body>
+
+    <h1>Movies</h1>
+    <nav class="navbar">
+
+        <input type="radio" name="btn" id="btn1" checked />
+        <label for="btn1">All Movies</label>
+
+        <input type="radio" name="btn" id="btn2" />
+        <label for="btn2">Latest Movies</label>
+
+        <input type="radio" name="btn" id="btn3" />
+        <label for="btn3">Avengers</label>
+
+        <input type="radio" name="btn" id="btn4" />
+        <label for="btn4">X-Men</label>
+
+        <input type="radio" name="btn" id="btn5" />
+        <label for="btn5">Princess</label>
+
+        <input type="radio" name="btn" id="btn6" />
+        <label for="btn6">Batman</label>
+
+    </nav>
+
+    <div class="searchBar">
+        <form onclick="return false">
+            <input id="search" type="text" value="" placeholder="Search Title..">
+            <button type="submit" id="searchBtn">
+                <i id="searchIcon" class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+
+    <ul class="movieList">
+    </ul>
+
+</body>
+
+</html>

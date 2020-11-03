@@ -1,0 +1,155 @@
+body{
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+
+input[type="radio"]{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    margin: 10px;
+}
+  
+label {
+    cursor: pointer;
+    background-color: #272727;
+    color: white;
+    font-size: 1.3em;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border-radius: 3px;
+    transition: 300ms ease-in-out;
+}
+
+input[type="radio"]:checked + label{
+    background-color: #58ba83;
+    color: #272727;
+}
+  
+.searchBar{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar input {
+    height: 30px;
+    width: 200px;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin-right: 5px;
+}
+
+
+.searchBar button {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#searchIcon{
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.movieList{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.moviesList-Card{
+    height: auto;
+    width: 319px;
+    background-color: #272727;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    transition: 300ms ease-in-out
+
+}
+
+img {
+    border-radius: 10px;
+    height: 380px;
+    width: 280px;
+}
+
+.imgOpacity{
+    opacity: 0.2;
+}
+
+.btn {
+    width: 130px;
+    height: 45px;
+    background: #58ba83;
+    border-radius: 5px;
+    position: absolute;
+    color:  black;
+    font-size: 1.1em;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    display: none;
+}
+
+.btnShow {
+    display: block
+}
+
+.moviesList-Card:hover {
+    transform: translateY(-8px);
+    transition: 300ms ease-in-out;
+}
+
+.title {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.date {
+    color: #a2a2a2;
+}
+
+.message {
+    font-size: 1.3em;
+    color: white;
+}
+
